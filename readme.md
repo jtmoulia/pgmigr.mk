@@ -4,8 +4,8 @@ Stupid simple postgres migrations.
 
 This provides Makefile rules for keeping a database up to date against
 a set of migrations. It's pretty mindless: it will run every
-$MIGRATION_SOURCE_DIR/*.sql file, and `touch` using the same file
-in $MIGRATION_TARGET_DIR. If a migration is changed, it will be rerun.
+`$MIGRATION_SOURCE_DIR/*.sql` file, and `touch` using the same filename
+in `$MIGRATION_TARGET_DIR`. If a migration is changed, it will be rerun.
 
 ## Usage
 
